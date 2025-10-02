@@ -18,90 +18,181 @@
         </div>
     </header>
 
-    <section>
+    <section class="dropdown">
         <h1>I'm looking for a gift for...</h1>
         <h2 class="uncle">my uncle</h2>
         <form></form>
+        <div class="users">
         <img src="assets/users.png" alt="1m">
         <p>Unisciti alla nostra community di spotters</p>
+        </div>
     </section>
 
     <main>
         
-        <section> <!--Grijze achtergrond--> 
-            <p>lasciati ispirare dal mondo Milledoni</p>
-            <ul>
+        <section class="background-grid"> <!--Grijze achtergrond--> 
+            <p class="quote">lasciati ispirare dal mondo Milledoni</p>
+            <!-- <ul>
                 <li>filtra per</li>
-            </ul>
+            </ul> -->
+            <div class="filter">
+                <button onclick="myFunction()" class="filtra">FILTRA PER</button>
+                <div id="myDropdown" class="filtra-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
 
-            <article class="product-grid"> <!--grid met producten-->
+                <!--grid met producten-->
 
-                <div class="product">
-                    <img src="assets/product-img/p1.jpg" alt="foto1">
+                <!-- <div class="product">
+                    <img class="prdct-img" src="assets/product-img/p1.jpg" alt="foto1">
                     <p>una bicicletta usata dor restaurare insieme</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p2.jpg" alt="foto2">
+                    <img class="prdct-img" src="assets/product-img/p2.jpg" alt="foto2">
                     <p>Adv. Un viaggio in Lapponia</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p3.jpg" alt="foto3">
+                    <img class="prdct-img" src="assets/product-img/p3.jpg" alt="foto3">
                     <p>Una candela all'odore di libri vecchi</p>
-                    <button> <a href=""><img src="" alt=""></a></button>                
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>                
                 </div>
                 
                 <div class="product">
-                    <img src="assets/product-img/p4.jpg" alt="foto4">
+                    <img class="prdct-img" src="assets/product-img/p4.jpg" alt="foto4">
                     <p>Regala una bicicletta usata da restaurare insieme</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                   <img src="assets/product-img/p5.jpg" alt="foto5">
+                   <img class="prdct-img" src="assets/product-img/p5.jpg" alt="foto5">
                     <p>Adv.Un viaggio in Lapponia</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p6.jpg" alt="foto6">
+                    <img class="prdct-img" src="assets/product-img/p6.jpg" alt="foto6">
                     <p>Una candela all'odore di libri vecchi</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p7.jpg" alt="foto7">
+                    <img class="prdct-img" src="assets/product-img/p7.jpg" alt="foto7">
                     <p>Regala una bicicletta usata da restaurare insieme</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p8.jpg" alt="foto8">
+                    <img class="prdct-img" src="assets/product-img/p8.jpg" alt="foto8">
                     <p>Adv. Un viaggio alla scoperta dei paesaggi innevati</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p9.jpg" alt="foto9">
+                    <img class="prdct-img" src="assets/product-img/p9.jpg" alt="foto9">
                     <p>Una pianta tropicale</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p10.jpg" alt="foto10">
+                    <img class="prdct-img" src="assets/product-img/p10.jpg" alt="foto10">
                     <p>Regala una bicicletta usata da restaurare insieme</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
                 </div>
 
                 <div class="product">
-                    <img src="assets/product-img/p11.jpg" alt="foto11">
+                    <img class="prdct-img" src="assets/product-img/p11.jpg" alt="foto11">
                     <p>Regala una bicicletta usata da restaurare insieme</p>
-                    <button> <a href=""><img src="" alt=""></a></button>
+                    <button class="add-list"> <a href=""><img src="assets/add-list.png" alt="add-list"></a></button>
+                </div> -->
+
+            <article class="product-grid">
+                <!-- Product 1 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/product-img/p1.jpg" alt="foto1">
+                        <button class="add-list">
+                            <img src="assets/add-list.png" alt="add">
+                        </button>
+                        <div class="tags">
+                            <span class="tag-timeless">timeless</span>
+                            <span class="tag-sustainable">sustainable</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Una bicicletta usata da restaurare insieme</p>
+                        <div class="stats">
+                            <span>+2 Saved</span>
+                            <span>+12 Given</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/product-img/p2.jpg" alt="foto2">
+                        <button class="add-list">
+                            <img src="assets/add-list.png" alt="add">
+                        </button>
+                        <div class="tags">
+                            <span class="tag-experience">experience</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Adv. Un viaggio in Lapponia</p>
+                        <div class="stats">
+                            <span>+35 Saved</span>
+                            <span>+4 Given</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/product-img/p3.jpg" alt="foto3">
+                        <button class="add-list">
+                            <img src="assets/add-list.png" alt="add">
+                        </button>
+                        <div class="tags">
+                            <span class="tag-sustainable">sustainable</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Una candela all’odore di libri vecchi</p>
+                        <div class="stats">
+                            <span>+35 Saved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/product-img/p9.jpg" alt="foto9">
+                        <button class="add-list">
+                            <img src="assets/add-list.png" alt="add">
+                        </button>
+                        <div class="tags">
+                            <span class="tag-green">green</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Una pianta tropicale</p>
+                        <div class="stats">
+                            <span>+12 Saved</span>
+                        </div>
+                    </div>
                 </div>
             </article>
+
         </section>
     </main>
 
