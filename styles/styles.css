@@ -1,3 +1,9 @@
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: parkinsans;
@@ -10,6 +16,11 @@ header{
     display: flex;
     justify-content: space-between;
 
+}
+
+header img{
+    max-width: 100%;
+    height: auto;
 }
 
 .logo{
