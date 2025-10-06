@@ -44,7 +44,7 @@ header img{
 .create-your-list{
     display: none;
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1024px) {
         display: block;
     }
 }
@@ -66,10 +66,38 @@ header img{
 main{
     background-color: #F6F5F5;
     border-top: 5px #E0B000 solid;
+    position: relative;
+    margin-top: 3em;
 }
 .background-grid{
     display: flex;
     background-color: #F6F5F5;
+}
+
+.dropdown{
+    text-align: center;
+}
+
+.tie{
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 678px) {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.tie svg{
+    height: 50px;
+
+    @media (min-width: 678px) {
+        height: 100%;
+    }
 }
 
 /* gecopieerd van website---------------------------------------------------------- */
@@ -151,6 +179,7 @@ main{
 .product{ 
     position: relative;
     background-color: white ;
+    padding: 5px;
 }
 
 .product-grid img{
