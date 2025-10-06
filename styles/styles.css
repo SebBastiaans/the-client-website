@@ -15,12 +15,11 @@ body {
 header{
     display: flex;
     justify-content: space-between;
-
 }
 
 header img{
     max-width: 100%;
-    height: auto;
+    height: 80px;
 }
 
 .logo{
@@ -33,7 +32,7 @@ header img{
 }
 
 .logo-small{
-    display: block;
+    display: flex;
     margin-left: 10px;
     margin-top: 10px;
 
@@ -51,7 +50,7 @@ header img{
 }
 
 .create-your-list-small{
-    display: block;
+    display: flex;
 
     @media (min-width: 678px) {
         display: none;
@@ -61,6 +60,7 @@ header img{
 .icons{
     display: flex;
     margin-top: 10px;
+    max-height: 100px;
 }
 /* -----header----- */
 main{
@@ -72,20 +72,11 @@ main{
     background-color: #F6F5F5;
 }
 
-.dropdown{
-    position: sticky;
-
-}
-
-.quote{
-    text-align: center;
-}
-
 /* gecopieerd van website---------------------------------------------------------- */
 /* Dropdown Button */
 .filtra {
-  background-color: #3498DB;
-  color: white;
+  background-color: #F6F5F5;
+  color: #212121;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -94,7 +85,7 @@ main{
 
 /* Dropdown button on hover & focus */
 .filtra:hover, .filtra:focus {
-  background-color: #2980B9;
+  background-color: #F6F5F5;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -130,6 +121,17 @@ main{
     }
 }
 
+.background-grid{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+}
+
+.quote{
+    position: absolute;
+    padding: 10em;
+    text-align: center;
+}
+
 .product-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -148,8 +150,11 @@ main{
 .product{ 
     position: relative;
     background-color: white ;
-    height: 300px;
+}
 
+.product-grid img{
+    height: 400px;
+    width: 400px;
 }
 
 .add-list{
@@ -158,6 +163,20 @@ main{
     right: 10px;
     background: transparent;
     cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.add-list img{
+    height: 50px;
+    width: 50px;
+}
+
+.tags{
+    position: absolute;
+    bottom: 93px;
+    left: 10px;
+    flex-wrap: wrap;
 }
 
 .tag-timeless{
@@ -166,18 +185,21 @@ main{
     font-size: 12px;
     padding: 3px 8px;
 }
+
 .tag-sustainable{
     background: #466EBF;
     color: white;
     font-size: 12px;
     padding: 3px 8px;
 }
+
 .tag-experience{
     background: #AA2677;
     color: white;
     font-size: 12px;
     padding: 3px 8px;
 }
+
 .tag-green{
     background: #4CAF50;
     color: white;
@@ -185,12 +207,9 @@ main{
     padding: 3px 8px;
 }
 
-
-
 /* Alles van de footer */
 footer{
     background-color: black;
-
 }
 
 .footer-middle {
