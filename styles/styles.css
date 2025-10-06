@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: parkinsans;
     line-height: 1.4;
-
+    font-family: "Parkinsans", sans-serif;
 }
 
 /* Alles header */
@@ -137,6 +137,7 @@ main{
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px;
+    margin-inline: 10px;
 
     @media (min-width: 678px) {
     grid-template-columns: repeat(2, 1fr);
@@ -154,7 +155,8 @@ main{
 
 .product-grid img{
     height: 400px;
-    width: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .add-list{
@@ -212,7 +214,22 @@ footer{
     background-color: black;
 }
 
+.footer-gifts{
+    background: #E0B000;
+    color: white;
+    display: block;
+
+    @media (min-width: 1024) {
+        display: flex;
+    }
+}
+
 .footer-middle {
-    display: flex;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 2fr;
+    display: block;
+    color: white;
+
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr 2fr;
+    }
 }
